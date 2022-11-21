@@ -115,11 +115,13 @@ const handlerClick = (handlerItem: IHandlerItem) => {
   grid-column-gap: var(--gap-size);
   place-items: center center;
   &.is-col {
+    height: 100%;
     top: 0;
     grid-template-rows: repeat(var(--box-size), 1fr);
     transform: translateX(120%);
   }
   &.is-row {
+    width: 100%;
     left: 0;
     grid-template-columns: repeat(var(--box-size), 1fr);
     transform: translateY(120%);
